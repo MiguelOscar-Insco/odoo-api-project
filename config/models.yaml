@@ -1,0 +1,41 @@
+# Configuración de modelos de Odoo más utilizados
+models:
+  res.partner:
+    name: "Contactos"
+    fields:
+      - name
+      - email
+      - phone
+      - is_company
+      - parent_id
+      - category_id
+      
+  product.product:
+    name: "Productos"
+    fields:
+      - name
+      - default_code
+      - barcode
+      - list_price
+      - categ_id
+      - active
+      
+  sale.order:
+    name: "Órdenes de Venta"
+    fields:
+      - name
+      - partner_id
+      - date_order
+      - state
+      - amount_total
+      - order_line
+      
+  account.move:
+    name: "Facturas"
+    fields:
+      - name
+      - partner_id
+      - invoice_date
+      - state
+      - amount_total
+      - move_type
